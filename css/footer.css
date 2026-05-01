@@ -1,0 +1,17 @@
+footer{
+    font: inherit;
+}
+
+.botoes-footer{
+    display: flex;
+    gap: 5%;
+}
+
+button{
+    border: 1px solid rgba(189, 187, 187, 0.5);
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: left;
+    width: 14vw;
+}
