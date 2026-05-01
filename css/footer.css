@@ -1,5 +1,12 @@
 footer{
     font: inherit;
+    border-top: 1px solid rgba(189, 187, 187, 0.5);
+    padding: 20px;
+}
+
+footer p{
+    font-size: 1rem;
+    color: rgba(133, 130, 130, 0.699);
 }
 
 .botoes-footer{
