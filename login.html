@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
+
 <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-nav">
+          <h1 class="logo-text">
+            <a href="/">HABIT</a>
+          </h1>
+  
+          <nav>
+            <ul class="nav-ul">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="categorias.html">Páginas</a></li>
+              <li><a href="destaques.html">Destaques</a></li>
+              <li><a href="newsletter.html">Assinar</a></li>
+              <li><a href="admin-categoria.html">Admin</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="actions-container">
+          <form>
+            <input
+              id="search-input"
+              type="text"
+              class="header-search-input"
+              placeholder="Buscar..."
+              aria-label="Buscar"
+            />
+          </form>
+  
+          <button class="header-btn search-btn">Buscar</button>
+          <button class="header-btn login-btn" onclick="location.href='login.html'">Entrar</button>
+        </div>
+        <button class="menu-btn">
+          <img
+            class="hambuguer-img"
+            src="img/hamburguer.png"
+            alt="Imagem do menu"
+          />
+        </button>
+      </div>
+    </header>
 
     <main>
         <div class="contender-login">
@@ -17,9 +59,9 @@
                 <input type="password" placeholder="Senha" id="input-senha">
                 <div class="botoes-login">
                     <input type="button" value="Entrar" id="button-entrar">
-                    <input type="button" value="Entrar com Google" id="button-google">
+                    <input type="button" value="Entrar com Google" id="button-google" onclick="location.href='admin-categoria.html'">
                 </div>
-                <label><a href="#">Esqueci a senha</a> • <a href="#">Criar conta</a></label>
+                <label><a href="#">Esqueci a senha</a> • <a href="cadastro.html">Criar conta</a></label>
             </div>
         </div>
     </main>
