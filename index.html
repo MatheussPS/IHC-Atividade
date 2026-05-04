@@ -1,11 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Habit</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo-nav">
+          <h1 class="logo-text">
+            <a href="/">HABIT</a>
+          </h1>
+
+          <nav>
+            <ul class="nav-ul">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Páginas</a></li>
+              <li><a href="#">Destaques</a></li>
+              <li><a href="#">Assinar</a></li>
+              <li><a href="#">Admin</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="actions-container">
+          <form>
+            <input
+              id="search-input"
+              type="text"
+              class="header-search-input"
+              placeholder="Buscar..."
+              aria-label="Buscar"
+            />
+          </form>
+
+          <button class="header-btn search-btn">Buscar</button>
+          <button class="header-btn login-btn">Entrar</button>
+        </div>
+        <button class="menu-btn">
+          <img
+            class="hambuguer-img"
+            src="img/hamburguer.png"
+            alt="Imagem do menu"
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="browse">
+        <div class="intro-browse-content">
+          <div class="title-actions">
+            <h1 class="browse-title title">Navegue por tópicos de interesse</h1>
+            <p class="browse-desc">
+              Descubra conteúdos por categorias, posts em destaque e as escolhas
+              do editor.
+            </p>
+            <div class="browse-actions">
+              <button id="section-btn" class="explore-btn browse-btn">
+                Explorar categorias
+              </button>
+              <button id="section-btn" class="sign-btn browse-btn">
+                Assine a newsletter
+              </button>
+            </div>
+          </div>
+          <img
+            class="browse-banner-img"
+            src="img/imgf2.png"
+            alt="banner inicial"
+          />
+        </div>
+      </section>
+      <section id="popular-categories" class="section-container">
+        <h2 class="title">Categorias Populares</h2>
+        <div class="categories categories-p">
+          <div class="categorie categorie-p">
+            <p>Work</p>
+          </div>
+          <div class="categorie categorie-p">
+            <p>Books</p>
+          </div>
+          <div class="categorie categorie-p">
+            <p>Techno</p>
+          </div>
+        </div>
+      </section>
+      <section id="all-categories" class="section-container">
+        <h2 class="title">Todas as Categorias</h2>
+        <div class="categories categories-a">
+          <div class="categorie categorie-a">
+            <p>Negócios</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Techno</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Produtividade</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Filmes</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Lifestyle</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Educação</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Mailing</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>eCommerce</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Alimentação</p>
+          </div>
+          <div class="categorie categorie-a">
+            <p>Social</p>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="evidence-posts" class="section-container">
+        <div class="posts-content">
+          <h2 class="title">Postagens em Destaque</h2>
+          <div class="posts-card">
+            <img src="img/imgf2.png" alt="Imagem de post">
+            <div class="post-desc">
+              <small>31 Jul 2025 Destaque</small>
+              <p>Erros de Design que Todos Devem Evitar</p>
+              <small>3 min de leitura</small>
+            </div>
+          </div>
+          <div class="posts-card">
+            <img src="img/imgf2.png" alt="Imagem de post">
+            <div class="post-desc">
+              <small>31 Jul 2025 Destaque</small>
+              <p>As Maiores Empresas por Receita</p>
+              <small></small>
+            </div>
+          </div>
+        </div>
+        </div>
+        <aside>
+          <h3 class="aside-title title">Escolhas do Editor</h3>
+          <ul>
+            <li><a href="#">O uso negativo da internet</a></li>
+            <li><a href="#">O segredo do brainstorm</a></li>
+            <li><a href="#">Escalar para pequenos negócios</a></li>
+            <li><a href="#">O futuro do trabalho remoto</a></li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>
