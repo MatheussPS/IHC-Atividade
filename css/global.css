@@ -158,7 +158,6 @@ a {
 }
 
 footer{
-    font: inherit;
     border-top: 1px solid rgba(189, 187, 187, 0.5);
     padding: 20px;
     bottom: 0;
@@ -182,7 +181,7 @@ footer p{
 .botoes-footer > button{
     border: 1px solid rgba(189, 187, 187, 0.5);
     background-color: #fff;
-    padding: 8px;
+    padding: var(--space-lg);
     border-radius: 5px;
     text-align: left;
 }
