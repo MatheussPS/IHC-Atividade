@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+:root {
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+   
+    --color-green: #0f766d;
+    --color-grey: #f2f2f2;
+    --color-dark-grey: #e5e5e5;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -10,11 +22,6 @@ main{
     justify-content: center;
     height: 80vh;
     background-color: #d4d3d348
-}
-
-h2{
-    font: inherit caption;
-    color: #000000;
 }
 
 #input-email{
@@ -43,7 +50,7 @@ h2{
 }
 
 #button-entrar{
-    background-color: black;
+    background-color: var(--color-green);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -53,8 +60,8 @@ h2{
 
 #button-google{
     background-color: white;
-    color: black;
-    border: 0.1px solid black;
+    color: var(--color-green);
+    border: 0.1px solid var(--color-green);
     font-size: 14px; 
     padding: 10px 20px;
     cursor: pointer;
@@ -63,7 +70,7 @@ h2{
 }
 
 #button-google:hover{
-    background-color: black;
+    background-color: var(--color-green);
     color: white;
     transition: all 0.3s ease;
 }
@@ -73,7 +80,11 @@ h2{
     gap: 10px;
 }
 
+label{
+    color: var(--color-green);
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color: var(--color-green);
 }
