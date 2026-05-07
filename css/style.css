@@ -173,23 +173,23 @@ aside{
     font-size: 1.2em;
 }
 
-aside > ul{
+aside > nav, aside > nav > ul{
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
     padding: var(--space-xl);
 }
 
-aside > ul > li > a{
+aside > nav > ul > li > a{
     color: #000;
     font-weight: lighter;
 }
 
-aside > ul > li{
+aside > nav > ul > li{
     transition: 0.2s;
 }
 
-aside > ul > li :hover{
+aside > nav > ul > li :hover{
     text-decoration: underline;
 }
 
@@ -206,7 +206,7 @@ aside > ul > li :hover{
         margin-top: 7vh;
     }
 
-    aside > ul{
+    aside > nav > ul{
         gap: var(--space-md);
     }
 
@@ -258,10 +258,10 @@ aside > ul > li :hover{
         margin-top: 20vh !important;
     }
 
-    aside > ul{
+    aside > nav > ul{
         text-align: center;
         padding: 5vh 0 0 0;
-}
+    }
 }
 
 @media (max-width: 360px) {
@@ -308,7 +308,4 @@ aside > ul > li :hover{
         text-align: center;
     }
 
-    aside > ul{
-        text-align: center;
-    }
 }

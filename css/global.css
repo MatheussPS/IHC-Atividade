@@ -32,6 +32,10 @@ h3 {
   font-size: clamp(1.3rem, 2vw, 1.5rem);
 }
 
+h4 {
+   font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+
 p {
   font-size: clamp(0.95rem, 1.2vw, 1rem);
 }
@@ -129,7 +133,7 @@ a {
 
 .header-btn {
   border-radius: 10px;
-  border: 2px solid var(--color-green);
+  border: 1px solid var(--color-green);
   background: transparent;
   color: var(--color-green);
   cursor: pointer;
