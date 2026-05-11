@@ -1,4 +1,4 @@
-.categories {
+.editor-picks {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -8,60 +8,60 @@
     gap: var(--space-md);
 }
 
-.categories-title {
+.editor-picks-title {
     margin-top: 3vh;
 }
 
-.categories-list {
+.editor-picks-list {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
     padding: var(--space-lg);
 }
 
-.categorie-search-input {
+.editor-picks-search-input {
     border-radius: 10px;
     border: 1px solid #ccc;
     width: 100%;
     padding: var(--space-md);
 }
 
-.categorie-list-title {
+.editor-picks-list-title {
     width: 15vw;
 }
 
-.categorie-list-title,
-.item-list {
+.editor-picks-list-title,
+.editor-picks-item {
     padding-bottom: var(--space-md);
 }
 
-.categorie-list-title,
-.item-list > p {
+.editor-picks-list-title,
+.editor-picks-item > p {
     padding-left: var(--space-sm);
 }
 
-.item-list,
-.categorie-list-title {
+.editor-picks-item,
+.editor-picks-list-title {
     border-bottom: 1.5px solid var(--color-dark-grey);
 }
 
-.item-list {
+.editor-picks-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 
-.item-list p {
+.editor-picks-item p {
     justify-self: start;
 }
 
-.categorie-item-actions {
+.editor-picks-item-actions {
     display: flex;
     gap: var(--space-sm);
     justify-self: center;
 }
 
-.categorie-button {
+.editor-picks-button {
     padding: var(--space-md);
     border-radius: 10px;
     border: 1px solid var(--color-green);
@@ -72,29 +72,29 @@
     font-size: 1em;
 }
 
-.categorie-button:hover {
+.editor-picks-button:hover {
     background: var(--color-green);
     color: #fff;
 }
 
 @media (max-width: 640px) {
-    .item-list {
+    .editor-picks-item {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 426px) {
-    .categories {
+    .editor-picks {
         align-items: center;
         justify-content: center !important;
     }
 
-    .categorie-list-title {
+    .editor-picks-list-title {
         width: 100%;
         text-align: center;
     }
 
-    .item-list {
+    .editor-picks-item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -102,7 +102,7 @@
         gap: var(--space-lg);
     }
 
-    .categorie-button {
+    .editor-picks-button {
         width: 30vw;
         font-size: 0.8em;
     }
