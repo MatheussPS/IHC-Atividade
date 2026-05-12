@@ -1,3 +1,14 @@
+:root {
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+   
+    --color-green: #0f766d;
+    --color-grey: #f2f2f2;
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +48,7 @@ h2{
 }
 
 #button-newsletter{
-    background-color: black;
+    background-color: var(--color-green);
     color: white;
     border: none;
     padding: 10px 20px;
