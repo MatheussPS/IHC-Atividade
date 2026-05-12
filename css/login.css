@@ -24,6 +24,10 @@ main{
     background-color: #d4d3d348
 }
 
+h2{
+    margin-bottom: 10px;
+}
+
 #input-email{
     padding: 8px;
     border: 1px solid rgba(189, 187, 187, 0.5);
