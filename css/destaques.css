@@ -1,0 +1,51 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESTAQUES */
+.destaques{
+    background-color: #f5f5f5;
+
+    padding: 20px;
+
+    border: 1px solid #e0e0e0;
+
+    margin-bottom: 30px;
+}
+
+.destaques h1{
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+.imagem{
+    width: 100%;
+    height: 120px;
+
+    background-color: #e8e8e8;
+
+    border-radius: 6px;
+
+    margin-bottom: 10px;
+}
