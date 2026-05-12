@@ -1,7 +1,7 @@
 .post {
     display: flex;
     flex-direction: column;
-    padding: var(--space-md);
+    padding: var(--space-lg);
     gap: var(--space-md);
     background-color: #fff;
     border: 2px solid var(--color-grey);
@@ -9,9 +9,7 @@
 }
 
 .post-title {
-    margin-top: 1vh;
-    /* font-size: 1.1em; */
-    font-weight: 600;
+    margin-top: 3vh;
 }
 
 .post-editor {

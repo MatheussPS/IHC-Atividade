@@ -190,6 +190,11 @@ footer p{
     text-align: left;
 }
 
+.selected{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media (max-width: 820px) {
     .header-content {
         gap: var(--space-sm);

@@ -4,7 +4,7 @@
     background-color: #fff;
     border: 2px solid var(--color-grey);
     border-radius: 15px;
-    padding: var(--space-md);
+    padding: var(--space-lg);
     gap: var(--space-md);
 }
 
