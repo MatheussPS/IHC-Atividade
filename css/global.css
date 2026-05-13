@@ -122,31 +122,39 @@ a {
   gap: var(--space-sm);
 }
 
-.header-search-input {
+.header-search-input, .header-search-input-mobile {
   border-radius: 10px;
   border: 1px solid #ccc;
+}
+
+.header-search-input{
   width: 12vw;
 }
 
-.header-search-input::placeholder {
+.header-search-input::placeholder,
+.header-search-input-mobile::placeholder {
     color: #868686;
 }
 
 .header-search-input,
-.header-btn {
+.header-btn,
+.header-btn-mobile,
+.header-search-input-mobile {
   padding: .8em;
 }
 
-.header-btn {
+.header-btn,
+.header-btn-mobile {
   border-radius: 10px;
   border: 1px solid var(--color-green);
-  background: transparent;
+  background: #fff;
   color: var(--color-green);
   cursor: pointer;
   transition: 0.2s;
 }
 
-.header-btn:hover {
+.header-btn:hover,
+.header-btn-mobile:hover {
   background: var(--color-green);
   color: white;
 }
@@ -161,10 +169,62 @@ a {
     width: 8%;
     background-color: white;
     border: none;
+    cursor: pointer;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.menu-toggle:checked ~ .nav-mobile{
+  display: flex;
 }
 
 .hambuguer-img{
     max-width: 100%;
+}
+
+.nav-mobile{
+  display: none;
+  border-top: 1px solid var(--color-grey);
+  padding: var(--space-lg);
+  width: 100%;
+}
+
+.nav-mobile,
+.nav-ul-mobile,
+.actions-container-mobile{
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-ul-mobile,
+.actions-container-mobile{
+  display: flex;
+}
+
+.actions-container-mobile{
+  margin-top: 2vh;
+  gap: var(--space-md);
+  width: 50%;
+}
+
+.login-search-container-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.header-btn-mobile{
+  width: 100%;
+}
+
+.actions-container-mobile form,
+.header-search-input-mobile{
+  width: 100%;
 }
 
 .button-footer {
@@ -186,16 +246,6 @@ a {
 :focus-visible {
     outline: 3px solid var(--color-green);
     outline-offset: 3px;
-    border-radius: 3px;
-}
-
-.card{
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.card:hover{
-  transform: scale(1.01)
 }
 
 footer{
@@ -238,10 +288,18 @@ footer p{
     }
 }
 
+@media (min-width: 769px){
+
+  .nav-mobile{
+    display: none !important;
+  }
+
+}
+
 @media (max-width: 768px) {
-  .nav-ul,
+
+  .nav-ul-d,
   .header-search-input,
-  .search-btn,
   .header-btn {
     display: none;
   }
@@ -251,4 +309,10 @@ footer p{
     min-height: 100%;
   }
 
+}
+
+@media (max-width: 426px) {
+  .actions-container-mobile{
+    width: 100%;
+  }
 }

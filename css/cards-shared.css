@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 
-.card:hover {
+.card:hover, .tag:hover {
     transform: scale(1.01);
 }
 
@@ -49,6 +49,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 20px;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 .action-load-more {
