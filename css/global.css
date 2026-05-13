@@ -164,6 +164,15 @@ a {
     max-width: 100%;
 }
 
+.card{
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.01)
+}
+
 footer{
     border-top: 1px solid rgba(189, 187, 187, 0.5);
     padding: 20px;

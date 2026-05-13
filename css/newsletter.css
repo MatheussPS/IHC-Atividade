@@ -56,4 +56,13 @@ h2{
     cursor: pointer;
     width: 20%;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 426px) {
+    #button-newsletter{
+        width: 100%;
+    }
 }

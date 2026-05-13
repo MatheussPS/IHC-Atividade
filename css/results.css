@@ -1,4 +1,4 @@
-#categorias {
+#results {
     width: 100%;
     margin-bottom: 30px;
     display: flex;
@@ -26,7 +26,7 @@
     color: #fff;
 }
 
-#categorias > h1 {
+#results > h1 {
     margin-bottom: var(--space-lg);
 }
 
@@ -111,13 +111,13 @@
         gap: var(--space-md);
     }
 
-    #categorias > h1{
+    /* #results > h1{
         text-align: center;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
-    #categorias > h1{
+    #results > h1{
         align-self: center;
     }
 
