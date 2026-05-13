@@ -87,6 +87,8 @@ section {
 
 .logo-text {
     display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 a {
