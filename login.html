@@ -55,25 +55,31 @@
         <div class="contender-login">
             <h2>Entrar</h2>
             <div class="conteudo-login">
-                <input type="email" placeholder="E-mail" id="input-email">
-                <input type="password" placeholder="Senha" id="input-senha">
+                <div class="field-group">
+                    <label for="input-email">E-mail</label>
+                    <input type="email" placeholder="seu@email.com" id="input-email">
+                </div>
+                <div class="field-group">
+                    <label for="input-senha">Senha</label>
+                    <input type="password" placeholder="••••••••" id="input-senha">
+                </div>
                 <div class="botoes-login">
                     <input type="button" value="Entrar" id="button-entrar">
                     <input type="button" value="Entrar com Google" id="button-google" onclick="location.href='admin-categoria.html'">
                 </div>
-                <label><a href="#">Esqueci a senha</a> • <a href="cadastro.html">Criar conta</a></label>
+                <p class="login-links"><a href="#">Esqueci a senha</a> • <a href="cadastro.html">Criar conta</a></p>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="botoes-footer">
-            <button class="button-footer"><b>Instagram</b></button>
-            <button class="button-footer"><b>Work</b></button>
-            <button class="button-footer"><b>Bags</b></button>
-            <button class="button-footer"><b>Lamp</b></button>
-            <button class="button-footer"><b>Books</b></button>
-        </div>
+        <nav class="botoes-footer" aria-label="Links do rodapé">
+            <a href="#" class="button-footer"><b>Instagram</b></a>
+            <a href="#" class="button-footer"><b>Work</b></a>
+            <a href="#" class="button-footer"><b>Bags</b></a>
+            <a href="#" class="button-footer"><b>Lamp</b></a>
+            <a href="#" class="button-footer"><b>Books</b></a>
+        </nav>
         <br>
         <p>© 2025 Meu Site • Meu site</p>
     </footer>

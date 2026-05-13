@@ -1,3 +1,5 @@
+/* Estilos específicos da página de Destaques — estilos de .cards, .card e .imagem estão em cards-shared.css */
+
 .destaques {
     display: flex;
     flex-direction: column;
@@ -9,65 +11,8 @@
     margin-bottom: var(--space-lg);
 }
 
-.cards {
-    margin-top: 7vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: var(--space-xl );
-}
-
-.imagem {   
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    background-color: #ebebeb;
-    border-radius: 10px;
-}
-
-.card > h3 {
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-lg);
-    font-weight: 600;
-    padding-bottom: var(--space-xs);
-}
-
-@media (max-width: 1024px) {
-    .card{
-        padding: var(--space-md);
-    }
-}
-
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 480px) {
-    .destaques > h1{
+    .destaques > h1 {
         align-self: center;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .tags{
-        gap: var(--space-md);
-    }
-
-    .card{
-        text-align: center;
-        align-items: center;
-        justify-content: center;
     }
 }

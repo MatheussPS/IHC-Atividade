@@ -1,3 +1,5 @@
+/* Estilos do editor de posts no painel admin */
+
 .post {
     display: flex;
     flex-direction: column;
@@ -70,7 +72,7 @@
 
 .upload-btn{
     color: #747474;
-    background-color: #fff !important;
+    background-color: #fff;
 }
 
 .post-actions {
@@ -110,7 +112,7 @@
 
 .publish-btn:hover{
     background: #fff;
-    color:  var(--color-green);
+    color: var(--color-green);
 }
 
 @media (max-width: 640px) {

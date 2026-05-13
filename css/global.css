@@ -1,3 +1,5 @@
+/* Estilos globais — variáveis, reset, header, footer e componentes compartilhados */
+
 :root {
  --space-xs: 0.25rem;
  --space-sm: 0.5rem;
@@ -7,7 +9,6 @@
 
  --color-green: #0f766d;
  --color-grey: #f2f2f2;
- /* --color-grey: #cacaca62; */
 }
 
 * {
@@ -164,6 +165,28 @@ a {
     max-width: 100%;
 }
 
+.button-footer {
+    display: block;
+    border: 1px solid rgba(189, 187, 187, 0.5);
+    background-color: #fff;
+    padding: var(--space-lg);
+    border-radius: 5px;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button-footer:hover {
+    background-color: var(--color-grey);
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-green);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
 .card{
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -223,7 +246,7 @@ footer p{
 
   .menu-btn {
     display: block;
-    min-height: 100% !important;
+    min-height: 100%;
   }
 
 }

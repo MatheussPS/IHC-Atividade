@@ -1,3 +1,5 @@
+/* Estilos da seção Escolhas do Editor no painel admin */
+
 .editor-picks {
     display: flex;
     flex-direction: column;
@@ -86,7 +88,7 @@
 @media (max-width: 426px) {
     .editor-picks {
         align-items: center;
-        justify-content: center !important;
+        justify-content: center;
     }
 
     .editor-picks-list-title {

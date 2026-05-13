@@ -1,3 +1,5 @@
+/* Estilos específicos da seção de Categorias no painel admin */
+
 .categories {
     display: flex;
     flex-direction: column;
@@ -86,7 +88,7 @@
 @media (max-width: 426px) {
     .categories {
         align-items: center;
-        justify-content: center !important;
+        justify-content: center;
     }
 
     .categorie-list-title {

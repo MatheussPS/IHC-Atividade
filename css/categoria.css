@@ -1,3 +1,5 @@
+/* Estilos específicos da página de Categorias — estilos de .cards, .card e .imagem estão em cards-shared.css */
+
 #categorias {
     width: 100%;
     margin-bottom: 30px;
@@ -5,108 +7,16 @@
     flex-direction: column;
 }
 
-.action-load-more{
-    margin-top: var(--space-xl);
-    align-self: center;
-}
-
-.action-load-more > button{
-    padding: var(--space-sm) var(--space-lg);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-    font-size: 1em;
-    border: 1px solid var(--color-green);
-    background: transparent;
-    color: var(--color-green);
-}
-
-.action-load-more > button:hover{
-    background: var(--color-green);
-    color: #fff;
-}
-
 #categorias > h1 {
     margin-bottom: var(--space-lg);
 }
 
-.cards {
-    margin-top: 7vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: var(--space-xl );
-}
-
-.imagem {   
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    background-color: #ebebeb;
-    border-radius: 10px;
-}
-
-.card > h3 {
-    margin-top: var(--space-md);
-    margin-bottom: var(--space-lg);
-    font-weight: 600;
-    padding-bottom: var(--space-xs);
-}
-
-.card > p{
+.card > p {
     color: #787878;
 }
 
-.tags{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--space-lg)
-}
-
-.tag{
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 20px;
-    padding: 0.5em;
-}
-
-@media (max-width: 1024px) {
-    .card{
-        padding: var(--space-md);
-    }
-}
-
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 480px) {
-    #categorias > h1{
+    #categorias > h1 {
         align-self: center;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .tags{
-        gap: var(--space-md);
-    }
-
-    .card{
-        text-align: center;
-        align-items: center;
-        justify-content: center;
     }
 }

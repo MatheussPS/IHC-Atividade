@@ -1,14 +1,4 @@
-:root {
-    --space-xs: 0.25rem;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 1.5rem;
-    --space-xl: 2rem;
-
-    --color-green: #0f766d;
-    --color-grey: #f2f2f2;
-    --color-dark-grey: #e5e5e5;
-}
+/* Estilos compartilhados para tabelas do painel admin */
 
 .container-ref-table {
     display: flex;
@@ -67,7 +57,7 @@ td {
 @media (max-width: 426px) {
     .container-ref-table {
         align-items: center;
-        justify-content: center !important;
+        justify-content: center;
     }
 
     .ref-button {

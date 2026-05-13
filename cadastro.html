@@ -55,10 +55,22 @@
         <div class="contender-cadastro">
             <h2>Criar Conta</h2>
             <div class="conteudo-cadastro">
-                <input type="text" placeholder="Nome Completo" id="input-name">
-                <input type="email" placeholder="E-mail" id="input-email">
-                <input type="password" placeholder="Senha" id="input-senha">
-                <input type="password" placeholder="Confirmar Senha" id="input-confirmar-senha">
+                <div class="field-group">
+                    <label for="input-name">Nome Completo</label>
+                    <input type="text" placeholder="João Silva" id="input-name">
+                </div>
+                <div class="field-group">
+                    <label for="input-email">E-mail</label>
+                    <input type="email" placeholder="seu@email.com" id="input-email">
+                </div>
+                <div class="field-group">
+                    <label for="input-senha">Senha</label>
+                    <input type="password" placeholder="••••••••" id="input-senha">
+                </div>
+                <div class="field-group">
+                    <label for="input-confirmar-senha">Confirmar Senha</label>
+                    <input type="password" placeholder="••••••••" id="input-confirmar-senha">
+                </div>
                 <div>
                     <input type="checkbox" name="checkbox" id="checkbox">
                     <label for="checkbox">Concordo com os termos e condições.</label>
@@ -67,15 +79,14 @@
             </div>
         </div>
     </main>
-     
     <footer>
-        <div class="botoes-footer">
-            <button class="button-footer"><b>Instagram</b></button>
-            <button class="button-footer"><b>Work</b></button>
-            <button class="button-footer"><b>Bags</b></button>
-            <button class="button-footer"><b>Lamp</b></button>
-            <button class="button-footer"><b>Books</b></button>
-        </div>
+        <nav class="botoes-footer" aria-label="Links do rodapé">
+            <a href="#" class="button-footer"><b>Instagram</b></a>
+            <a href="#" class="button-footer"><b>Work</b></a>
+            <a href="#" class="button-footer"><b>Bags</b></a>
+            <a href="#" class="button-footer"><b>Lamp</b></a>
+            <a href="#" class="button-footer"><b>Books</b></a>
+        </nav>
         <br>
         <p>© 2025 Meu Site • Meu site</p>
     </footer>

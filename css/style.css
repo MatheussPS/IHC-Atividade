@@ -206,12 +206,9 @@ aside > nav > ul > li :hover{
     aside > nav > ul{
         gap: var(--space-md);
     }
-
-
 }
 
 @media (max-width: 768px) {
-    
     .intro-browse-content {
         flex-direction: column;
         text-align: center;
@@ -236,14 +233,12 @@ aside > nav > ul > li :hover{
         justify-content: center;
         align-items: stretch;
     }
-
 }
 
 @media (max-width: 640px){
     .categories-a {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
     }
-
 }
 
 @media (max-width: 426px){
@@ -252,7 +247,7 @@ aside > nav > ul > li :hover{
     }
 
     .section-container{
-        margin-top: 20vh !important;
+        margin-top: 20vh;
     }
 
     aside > nav > ul{
@@ -263,8 +258,8 @@ aside > nav > ul > li :hover{
 
 @media (max-width: 360px) {
     .title-actions {
-        min-width: 100%; 
-        gap: var(--space-md); 
+        min-width: 100%;
+        gap: var(--space-md);
     }
 
     .browse-actions {
@@ -279,7 +274,7 @@ aside > nav > ul > li :hover{
     }
 
     .browse-banner-img {
-        height: 160px; 
+        height: 160px;
     }
 
     .posts-card{
@@ -304,5 +299,4 @@ aside > nav > ul > li :hover{
         align-items: center;
         text-align: center;
     }
-
 }

@@ -52,10 +52,10 @@
             do editor.
           </p>
           <div class="browse-actions">
-            <button id="section-btn" class="explore-btn browse-btn" onclick="location.href='categorias.html'">
+            <button class="explore-btn browse-btn" onclick="location.href='categorias.html'">
               Explorar categorias
             </button>
-            <button id="section-btn" class="sign-btn browse-btn" onclick="location.href='newsletter.html'">
+            <button class="sign-btn browse-btn" onclick="location.href='newsletter.html'">
               Assine a newsletter
             </button>
           </div>
@@ -66,13 +66,13 @@
     <section id="popular-categories" class="section-container">
       <h2 class="title">Categorias Populares</h2>
       <div class="categories categories-p">
-        <div class="categorie categorie-p">
+        <div class="categorie categorie-p" role="link" tabindex="0" aria-label="Categoria: Work">
           <p>Work</p>
         </div>
-        <div class="categorie categorie-p">
+        <div class="categorie categorie-p" role="link" tabindex="0" aria-label="Categoria: Books">
           <p>Books</p>
         </div>
-        <div class="categorie categorie-p">
+        <div class="categorie categorie-p" role="link" tabindex="0" aria-label="Categoria: Techno">
           <p>Techno</p>
         </div>
       </div>
@@ -148,13 +148,13 @@
     </section>
   </main>
   <footer>
-    <div class="botoes-footer">
-      <button class="button-footer"><b>Instagram</b></button>
-      <button class="button-footer"><b>Work</b></button>
-      <button class="button-footer"><b>Bags</b></button>
-      <button class="button-footer"><b>Lamp</b></button>
-      <button class="button-footer"><b>Books</b></button>
-    </div>
+    <nav class="botoes-footer" aria-label="Links do rodapé">
+      <a href="#" class="button-footer"><b>Instagram</b></a>
+      <a href="#" class="button-footer"><b>Work</b></a>
+      <a href="#" class="button-footer"><b>Bags</b></a>
+      <a href="#" class="button-footer"><b>Lamp</b></a>
+      <a href="#" class="button-footer"><b>Books</b></a>
+    </nav>
     <br>
     <p>© 2025 Meu Site • Meu site</p>
   </footer>
