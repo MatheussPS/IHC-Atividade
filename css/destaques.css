@@ -1,4 +1,6 @@
 .destaques {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -51,7 +53,21 @@
 }
 
 @media (max-width: 480px) {
+    .destaques > h1{
+        align-self: center;
+    }
+
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    .tags{
+        gap: var(--space-md);
+    }
+
+    .card{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
