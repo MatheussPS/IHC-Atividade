@@ -98,6 +98,15 @@
     border: 2px var(--color-grey) solid;
 }
 
+.categorie, .posts-card{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.categorie:hover, .posts-card:hover{
+    transform: scale(1.05);
+}
+
 .browse-btn, .categorie, .posts-card, aside, .posts-card > img{
     border-radius: 10px;
 }
