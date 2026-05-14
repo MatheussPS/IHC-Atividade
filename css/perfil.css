@@ -57,10 +57,7 @@ body {
 
 .postagens-section {
     width: 55%;
-    background: #fff;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .postagens-box {
@@ -94,17 +91,34 @@ body {
 }
 
 .status {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 4px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
 }
 
 .titulo {
-    font-size: 13px;
-    color: #888;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
 }
 
 .post span {
     font-size: 14px;
     color: #000;
+}
+
+.section-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
 }
