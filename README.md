@@ -2,8 +2,6 @@
 
 > Projeto desenvolvido para a disciplina de Interação Humano-Computador (IHC).
 
-🚧 **Em desenvolvimento...**
-
 ---
 
 ## Índice
