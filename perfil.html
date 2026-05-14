@@ -10,14 +10,12 @@
 
 <body>
     <header class="header">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
       <div class="header-content">
         <div class="logo-nav">
-          <h1 class="logo-text">
-            <a href="/">HABIT</a>
-          </h1>
-  
+          <p class="logo-text"><a href="index.html">HABIT</a></p>
           <nav>
-            <ul class="nav-ul">
+            <ul class="nav-ul nav-ul-d">
               <li><a href="index.html">Início</a></li>
               <li><a href="categorias.html">Páginas</a></li>
               <li><a href="destaques.html">Destaques</a></li>
@@ -26,28 +24,36 @@
             </ul>
           </nav>
         </div>
-  
         <div class="actions-container">
           <form>
-            <input
-              id="search-input"
-              type="text"
-              class="header-search-input"
-              placeholder="Buscar..."
-              aria-label="Buscar"
-            />
+            <input id="search-input" type="text" class="header-search-input" placeholder="Buscar..." aria-label="Buscar" />
           </form>
-  
-          <button class="header-btn search-btn">Buscar</button>
+          <button class="header-btn search-btn" onclick="location.href='results.html'">Buscar</button>
           <button class="header-btn login-btn" onclick="location.href='login.html'">Entrar</button>
         </div>
-        <button class="menu-btn">
-          <img
-            class="hambuguer-img"
-            src="img/hamburguer.png"
-            alt="Imagem do menu"
-          />
-        </button>
+        <label for="menu-toggle" class="menu-btn">
+          <img class="hambuguer-img" src="img/hamburguer.png" alt="Abrir menu" />
+        </label>
+      </div>
+      <div class="nav-mobile">
+        <nav>
+          <ul class="nav-ul-mobile nav-ul">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="categorias.html">Páginas</a></li>
+            <li><a href="destaques.html">Destaques</a></li>
+            <li><a href="newsletter.html">Assinar</a></li>
+            <li><a href="admin-categoria.html">Admin</a></li>
+          </ul>
+        </nav>
+        <div class="actions-container-mobile">
+          <form>
+            <input type="text" class="header-search-input-mobile" placeholder="Buscar..." aria-label="Buscar" />
+          </form>
+          <div class="login-search-container-mobile">
+            <button class="header-btn-mobile search-btn" onclick="location.href='results.html'">Buscar</button>
+            <button class="header-btn-mobile login-btn" onclick="location.href='login.html'">Entrar</button>
+          </div>
+        </div>
       </div>
     </header>
 
